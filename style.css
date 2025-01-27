@@ -1,0 +1,204 @@
+/* General */
+body{
+    background-color:#cfd7c7;
+    margin:0; /* removes the blank space above the first section */
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/tile_background.png);
+}
+
+header, main, footer{
+    background-color:#fff;
+    box-shadow: 0 4px 10px #ccc;
+    padding: 1em;
+    margin-bottom: 1em; /* adds space between elements */
+    border-radius: 4px;
+}
+
+header{
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#wrapper{
+    width:1200px;
+    margin: auto;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    gap: 1.5em;
+    padding: 0.5em; 
+    justify-content: center;
+}
+
+nav a{
+    padding: 0.5em;
+    color: #377a4e;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a:hover{
+    background-color: #fe5f55;
+    color:#fff;
+}
+
+.active{
+    color: #fe5f55;
+}
+
+.banner{
+    margin-bottom: 1em;
+    background-image: url(images/banner.jpg);
+    /* Image as background pic allows to round the corners */
+    width: 1200px;
+    height: 360px;
+    border-radius: 4px;
+}
+
+h1{
+    color: #377a4e;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: xx-large;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: #2c633f;
+    color:#fff;
+    font-size: small;
+}
+
+#copyright{
+    font-family: 'Borel', cursive;
+}
+
+/* Index / homepage */
+.cheesie{
+    color: #377a4e;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+#home-wrap{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.wp-img{
+    display: block;
+    margin:auto;
+    padding: 1em;
+    box-shadow: 0 4px 10px #ccc;
+}
+
+/* 🚩 TO DO */
+/* About page */
+/* Table */
+table{
+    table-layout: fixed;
+    width: 75%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td{
+    padding: 15px;
+}
+
+tbody td{
+    text-align: center;
+}
+
+th{
+    background-color: #2c633f;
+    color: #fff;
+}
+
+tr{
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+    background-color: #ccc;
+}
+
+.jobtitle{
+    color: midnightblue;
+    font-weight: bold;
+}
+
+/* 🚩 TO DO */
+/* ❕ update with special sale form and js */
+/* ❕ update colours */
+/* Forms (contact, order) */
+form{
+    background-color: aliceblue;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    border: 1px solid #0c243c;
+    border-radius: 4px;
+}
+
+.form-group{
+    padding: 5px;
+}
+
+textarea{
+    width: 100%;
+}
+
+input[type=submit]{
+    background-color: #e94d40;
+    color:#fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 0.5em 0.7em;
+    cursor: pointer;
+}
+
+label{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* 🚩 TO DO */
+/* Pizzas */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.gallery .item{
+    flex: 25%;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+.item h4, .item p{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.allergy{
+    color:darkblue;
+    font-size: smaller;
+}
