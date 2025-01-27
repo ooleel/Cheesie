@@ -2,7 +2,7 @@
 body{
     background-color:#cfd7c7;
     margin:0; /* removes the blank space above the first section */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", serif;
     background-image: url(images/tile_background.png);
 }
 
@@ -15,7 +15,7 @@ header, main, footer{
 }
 
 header{
-    background-color: white;
+    background-color: #f6f1d1;
     top: 0;
     left: 0;
     right: 0;
@@ -42,6 +42,8 @@ nav{
 nav a{
     padding: 0.5em;
     color: #377a4e;
+    font-family: "Bebas Neue", serif;
+    font-size: x-large; 
     font-weight: bold;
     text-decoration: none;
     border-radius: 4px;
@@ -67,9 +69,13 @@ nav a:hover{
 
 h1{
     color: #377a4e;
-    font-family: "Love Ya Like A Sister", cursive;
+    font-family: "Roboto Slab", serif;
     font-size: xx-large;
     text-align: center;
+}
+
+h2{
+    font-family: "Roboto Slab", serif;
 }
 
 footer{
@@ -84,19 +90,79 @@ footer{
 }
 
 /* Index / homepage */
-.cheesie{
-    color: #377a4e;
-    font-family: "Didact Gothic", sans-serif;
+#intro{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 900px;
 }
 
+.cheesie{
+    color: #377a4e;
+    font-family: "Leckerli One", serif; 
+    font-size: larger;
+}
+
+/* Scrolling banner styling */
+/* 1 container and text styles */
+.scrolling-text-container {
+    background-color: #2c633f;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    color: #fff;
+    font-family: "Bebas Neue", serif;
+    font-size: x-large;
+    padding: 8px 0;
+}
+
+.scrolling-text-inner a{
+    color:#fe5f55;
+}
+
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 30px;
+}
+
+/* Animation */
+/* 2.1 apply animation to text items */
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+/* 2.2 pause animation when hovering */
+.scrolling-text-container:hover .scrolling-text-inner>div {
+    animation-play-state: paused;
+}
+
+/* 2.3 setting animation with keyframes */
+@keyframes scroll-left {
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+}
+
+@keyframes scroll-right {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+/* End scrolling banner styling */
+
 #home-wrap{
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
 }
 
 .wp-img{
     display: block;
-    margin:auto;
+    margin: auto;
     padding: 1em;
     box-shadow: 0 4px 10px #ccc;
 }
