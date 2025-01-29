@@ -46,7 +46,7 @@ nav a{
     font-size: x-large; 
     font-weight: bold;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 15px;
 }
 
 nav a:hover{
@@ -57,6 +57,7 @@ nav a:hover{
 .active{
     color: #fe5f55;
 }
+/* End nav */
 
 .banner{
     margin-bottom: 1em;
