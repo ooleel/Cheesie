@@ -104,55 +104,34 @@ footer{
 }
 
 /* Scrolling banner styling */
-/* 1 container and text styles */
-.scrolling-text-container {
-    background-color: #2c633f;
-    border-radius: 4px;
+.sale-banner {
+    width: 100%;
     overflow: hidden;
-}
-
-.scrolling-text-inner {
-    display: flex;
+    background-color: #ff4500; /* Bright sale banner color */
+    color: white;
     white-space: nowrap;
-    color: #fff;
-    font-family: "Bebas Neue", serif;
-    font-size: x-large;
-    padding: 8px 0;
-}
-
-.scrolling-text-inner a{
-    color:#fe5f55;
-}
-
-.scrolling-text {
     display: flex;
-}
-
-.scrolling-text-item {
-    padding: 0 30px;
-}
-
-/* Animation */
-/* 2.1 apply animation to text items */
-.scrolling-text-inner>div {
-    animation: var(--direction) var(--marquee-speed) linear infinite;
-}
-
-/* 2.2 pause animation when hovering */
-.scrolling-text-container:hover .scrolling-text-inner>div {
-    animation-play-state: paused;
-}
-
-/* 2.3 setting animation with keyframes */
-@keyframes scroll-left {
-    0% {transform: translateX(0%);}
-    100% {transform: translateX(-100%);}
-}
-
-@keyframes scroll-right {
-    0% {transform: translateX(-100%);}
-    100% {transform: translateX(0%);}
-}
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .banner-text {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    animation: scrollBanner 10s linear infinite;
+  }
+  
+  @keyframes scrollBanner {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 /* End scrolling banner styling */
 
 #home-wrap{
