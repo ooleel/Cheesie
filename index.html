@@ -31,20 +31,11 @@
                 <h1>Welcome to Cheesie, the new trendy pizzeria!</h1>
                 <h2>Follow the smell of the freshly baked pizza dough, and discover the ultimate comfort food!</h2>
                 <p><span class="cheesie">Cheesie</span> is the answer to all your pizza needs, serving a wide variety of pizzas perfect for a sudden craving, a celebration or simply a lazy Sunday night.</p><br>
-
-                <!-- 1st try <marquee behavior="scroll" direction="left"> <a href="our-pizzas" title="Our pizzas">Special Prices</a> every Saturday </marquee> -->
-
-                <!-- 2nd try <div class="scrolling-text-container">
-                    <div class="scrolling-text-inner" style="--marquee-speed: 20s; --direction: scroll-left" role="marquee">
-                        <div class="scrolling-text">
-                            <div class="scrolling-text-item">Special Prices every Saturday</div>
-                            <div class="scrolling-text-item"><a href="our-pizzas" title="Our pizzas">CLICK HERE</a></div>
-                        </div>
-                    </div>
-                </div> -->
                 
-                <div class="sale-banner">
-                    <a href="our-pizzas" title="Our pizzas" class="banner-text">Special Prices every Saturday - CLICK HERE</a> 
+                <div class="sale-banner" id="clickableBanner">
+                    <div class="banner-content" id="bannerText">
+                        Special Prices every Saturday - CLICK HERE 🍕
+                    </div>
                 </div>
             </section>
 
@@ -75,6 +66,8 @@
             <span id="copyright">&copy; leeloo schaff</span>
         </footer>
     </div>
+
+    <script src="js/sale-banner.js"></script>
 </body>
 
 </html>

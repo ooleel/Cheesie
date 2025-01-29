@@ -104,34 +104,36 @@ footer{
 }
 
 /* Scrolling banner styling */
-.sale-banner {
+.sale-banner{
     width: 100%;
+    border-radius: 7px;
     overflow: hidden;
     background-color: #ff4500; /* Bright sale banner color */
     color: white;
-    white-space: nowrap;
+    padding: 7px;
     display: flex;
     align-items: center;
-    padding: 10px 0;
     position: relative;
-  }
-  
-  .banner-text {
-    display: inline-block;
-    text-decoration: none;
+    cursor: pointer;
+}
+
+.banner-content{
+    display: flex;
+    width: max-content;
+    animation: scrollBanner 20s linear infinite;
+    white-space: nowrap;
+    font-size: larger;
     color: white;
-    font-size: 1.2rem;
-    animation: scrollBanner 10s linear infinite;
-  }
+}
   
-  @keyframes scrollBanner {
+@keyframes scrollBanner{
     from {
-      transform: translateX(100%);
+      transform: translateX(0%);
     }
     to {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
-  }
+}
 /* End scrolling banner styling */
 
 #home-wrap{
