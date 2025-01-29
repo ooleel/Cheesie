@@ -91,7 +91,7 @@ footer{
 }
 
 /* Index / homepage */
-#intro{
+#intro-wrap{
     display: block;
     margin: auto;
     text-align: center;
@@ -149,8 +149,14 @@ footer{
     box-shadow: 0 4px 10px #ccc;
 }
 
-/* 🚩 TO DO */
 /* About page */
+.about-wrap{
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 900px;
+} 
+
 /* Table */
 table{
     table-layout: fixed;
@@ -182,7 +188,7 @@ tr:hover{
 }
 
 .jobtitle{
-    color: midnightblue;
+    color: #fe5f55;
     font-weight: bold;
 }
 
