@@ -194,10 +194,9 @@ tr:hover{
 
 /* 🚩 TO DO */
 /* ❕ update with special sale form and js */
-/* ❕ update colours */
 /* Forms (contact, order) */
 form{
-    background-color: aliceblue;
+    background-color: #f6f1d1;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -215,8 +214,9 @@ textarea{
 }
 
 input[type=submit]{
-    background-color: #e94d40;
+    background-color: #fe5f55;
     color:#fff;
+    font-family: "Poppins", serif;
     border: 0;
     border-radius: 4px;
     padding: 0.5em 0.7em;
@@ -224,7 +224,7 @@ input[type=submit]{
 }
 
 label{
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Poppins", serif;
 }
 
 /* 🚩 TO DO */
