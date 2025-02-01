@@ -107,16 +107,14 @@ footer{
 
 /* Scrolling banner styling */
 .sale-banner{
-    width: 100%;
-    border-radius: 7px;
+    width: auto; /* sets the wodth to the contect area */
     overflow: hidden;
-    background-color: #ff4500; /* Bright sale banner color */
-    color: white;
+    background-color: #fe5f55; 
     padding: 7px;
     display: flex;
     align-items: center;
     position: relative;
-    z-index: 5; 
+    z-index: 5; /* Overlapping elements with a larger z-index cover those with a smaller one */
     cursor: pointer;
 }
 

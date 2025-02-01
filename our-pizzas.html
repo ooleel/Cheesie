@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PIzza menu and order">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Borel&family=Leckerli+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Our pizzas | Cheesie</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="index.html" title="Back to the Homepage"> <img src="images/logo.png" alt="logo Cheesie"> </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a class="active" href="our-pizzas.html">Our pizzas</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="banner" aria-label="Image of our pizzas used as web banner."></div>
+
+        <main>
+            <h1>Cakes for Sale</h1>
+
+            <!-- Gallery here -->
+            <div class="gallery">
+                <div class="item"> 
+                    <a href="images/large/brownie640.jpg" title="Brownie"><img src="images/small/brownie300.jpg" alt="Brownie"></a>
+                    <h3>Brownies</h3>
+                    <p>Our iconic signature brownie</p>
+                    <p class="allergy">Contains dairy, nuts and eggs</p>
+                </div>
+
+                <div class="item">
+                    <a href="images/large/lemonCake900.jpg" title="Lemon cake"><img src="images/small/lemonCake300.jpg" alt="Lemon cake"></a>
+                    <h3>Flavoured cakes</h3>
+                    <p><em>Available flavours:</em><br>chocolate, lemon, orange, strawberry</p>
+                    <p class="allergy">Contains gluten, dairy, nuts and eggs. Strawberry cakes contain strawberries.</p>
+                </div>
+
+                <div class="item">
+                    <a href="images/large/cheeseCake640.jpg" title="Cheesecake"><img src="images/small/cheeseCake300.jpg" alt="Cheesecake"></a>
+                    <h3>Cheesecakes</h3>
+                    <p class="allergy">Contains gluten and dairy </p>
+                </div>
+
+                <div class="item">
+                    <a href="images/large/decoratedCake640.jpg" title="Specialty cake"><img src="images/small/decoratedCake300.jpg" alt="Specialty cake"></a>
+                    <h3>Specialty cakes</h3>
+                    <p class="allergy">Can be made to match dietary requirements</p>
+                </div>
+
+                <div class="item">
+                    <a href="images/large/cupcake640.jpg" title="Cupcakes"><img src="images/small/cupcake300.jpg" alt="Cupcakes"></a>
+                    <h3>Cupcakes</h3>
+                    <p class="allergy">Contains gluten, dairy, nuts and eggs</p>
+                </div>
+
+                <div class="item">
+                    <a href="images/large/macaron640.jpg" title="Macarons"><img src="images/small/macaron300.jpg" alt="Macarons"></a>
+                    <h3>Macarons</h3>
+                    <p class="allergy">Contains gluten, dairy, nuts and eggs</p>
+                </div>
+            </div>
+            <br>
+            <div id="prices">
+                <h2>Prices</h2>
+
+                <table>
+                    <tr>
+                        <th>Cake Size</th>
+                        <th>Suitable for</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Small</td>
+                        <td>8-10 people</td>
+                        <td>$50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td>10-12 people</td>
+                        <td>$60.00</td>
+                    </tr>
+                    <tr>
+                        <td>Large</td>
+                        <td>16-20 people</td>
+                        <td>$100.00</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div id="order">
+                <h2>How to order</h2>
+                <p>If you're interested in ordering a cake for your special occasion, let us know!</p>
+
+                <form action="mailto:specialcakes@email.com" method="post" id="contact" name="contact"
+                    enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name" id="name-label">Name</label><br>
+                        <input type="text" name="name" id="name" placeholder="Name Surname" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" id="email-label">Email</label><br>
+                        <input type="email" name="email" id="email" placeholder="@" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" id="phone-label">Phone number</label><br>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="0000 000 000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cake-type">Type of cake:</label><br>
+                        <select id="cake-type">
+                            <option selected disabled value>Choose one</option>
+                            <option value="brownies">Brownies</option>
+                            <option value="flavoured-cakes">Flavoured cakes</option>
+                            <option value="cheesecakes">Cheesecakes</option>
+                            <option value="specialty-cakes">Specialty cakes</option>
+                            <option value="cupcakes">Cupcakes</option>
+                            <option value="macarons">Macarons</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Cake size:</label><br>
+                        <div class="radio-group">
+                            <input type="radio" name="cake-size" id="small" value="small">
+                            <label for="small">Small</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="cake-size" id="medium" value="medium">
+                            <label for="medium">Medium</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" name="cake-size" id="large" value="large">
+                            <label for="large">Large</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date-required">Date required:</label><br>
+                        <input type="date" required="required" aria-required="true" id="date-required" name="date-required">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-request">Special requests:</label><br>
+                        <textarea id="special-request" name="special-request" rows="7" cols="50">Detail your order here</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>2025 Cheesie<br>
+            <span id="copyright">&copy; leeloo schaff</span>
+        </footer>
+    </div>
+</body>
+
+</html>
