@@ -92,7 +92,7 @@ footer{
 }
 
 /* ✔︎ Index / homepage */
-#intro-wrap{
+#intro-wrap, #accomodation{
     display: block;
     margin: auto;
     text-align: center;
@@ -257,6 +257,6 @@ label{
 }
 
 .allergy{
-    color:darkblue;
+    color: #fe5f55;
     font-size: smaller;
 }
